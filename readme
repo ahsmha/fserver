@@ -1,11 +1,12 @@
-go-fserver
+fserver
 
 a minimal self hostable file server
 
 usage 
     - cd path/to/cloned-repo
-    - go mod tidy, go build main.go
-    - ./main; flags supported
+    - go build
+    - ./fserver; flags supported
+    - alternatively, run using docker
 
 flags 
     -url : url at which files are served (default "localhost:9090")
@@ -16,4 +17,4 @@ flags
     -index : path to html index file (default "public/index.html")
 
 example
-    ./main -url="cdn.google.com" -address="<ip-address>" -namelen=5 -secretkey="fdlskjaoeWJIEW($ILJdlkjfewo3" -path="uploads" -index="public/index.html"
+    ./fserver -url="cdn.google.com" -address="<ip-address>" -namelen=5 -secretkey="fdlskjaoeWJIEW($ILJdlkjfewo3" -path="uploads" -index="public/index.html"
