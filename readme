@@ -1,14 +1,12 @@
 fserver
 
-a minimal self hostable file server
-
-usage 
+RUN
     - cd path/to/cloned-repo
     - go build
     - ./fserver; flags supported
     - alternatively, run using docker
 
-flags 
+FLAGS
     -url : url at which files are served (default "localhost:9090")
     -address : address to listen on (default "0.0.0.0:9090")
     -namelen: length of names of uploaded files (default 6)
@@ -16,5 +14,5 @@ flags
     -path : path to store uploaded files (default "uploads")
     -index : path to html index file (default "public/index.html")
 
-example
+EXAMPLE
     ./fserver -url="cdn.google.com" -address="<ip-address>" -namelen=5 -secretkey="fdlskjaoeWJIEW($ILJdlkjfewo3" -path="uploads" -index="public/index.html"
