@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>fsrv</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ahsmha.de/favicon.png">
+  </head>
+  <style>
+  body {
+    max-width: 640px;
+    padding: 20px 0 5px 0;
+    margin: 40px auto;
+  }
+  a {
+    color: #6a6a6a;
+    text-decoration:none;
+    border-bottom: 1.5px solid #cbcbcb;
+  }
+  a:hover {
+    border-bottom: 1.5px solid #6a6a6a;
+  }
+  footer {
+    padding-top: 20px;
+  }
+  </style>
+  <body>
+    <h2>ahsmha's file server</h2>
+    <form
+      enctype="multipart/form-data"
+      action="http://0.0.0.0:9090"
+      method="post"
+    >
+      <p>file: </p>
+      <input type="file" name="file" />
+      <br>
+      <p>secret key:</p>
+      <input type="password" name="key" />
+      <input type="submit" value="upload" />
+    </form>
+
+    <footer>
+      <a href="https://git.ahsmha.de/go-fserver">source</a>
+    </footer>
+  </body>
+</html>
