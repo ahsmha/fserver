@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"fserver/deps/way"
+	"fserver/deps"
 	"io"
 	"log"
 	"math/rand"

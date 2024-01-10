@@ -1,6 +1,6 @@
 fserver
 
-minimal self hostable file server
+minimal self hostable file server.
 
 
 RUN
@@ -30,3 +30,7 @@ FLAGS
 EXAMPLE
 
     ./fserver -url="cdn.google.com" -address="<ip-address>" -namelen=5 -secretkey="fdlskjaoeWJIEW($ILJdlkjfewo3" -path="uploads" -index="public/index.html"
+
+DEPENDENCIES
+
+    https://github.com/matryer/way
