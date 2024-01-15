@@ -34,3 +34,6 @@ EXAMPLE
 DEPENDENCIES
 
     https://github.com/matryer/way
+
+TODO
+    - implement custom url support
