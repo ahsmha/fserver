@@ -1,7 +1,8 @@
 FROM golang:alpine
 
 COPY . /fserver
-RUN cd /fserver & go build
+WORKDIR /fserver
+RUN go mod tidy & go build
 
 EXPOSE 9090
 CMD ["./fserver"]
