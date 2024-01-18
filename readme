@@ -38,3 +38,6 @@ DEPENDENCIES
 TODO
     - implement custom url support
     - use a more robust logic for url generation
+    - update a file with same url with some other file
+    - delete a url
+    - list all urls
